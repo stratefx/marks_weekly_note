@@ -7,6 +7,7 @@ import logging
 # Importing required library
 import pygsheets
 
+from config import SERVICE_ACCOUNT_FILE
 
 # import os.path
 # from google.auth.transport.requests import Request
@@ -156,11 +157,11 @@ def update_csv(current_count_dict):
 current_time = datetime.datetime.now()
 current_time = current_time.replace(microsecond=0)
 
-# logger.info(f'Started: ' + str(current_time))
-# email = clean_email(email)
-# count_dict = count_words(email)
-# update_csv(count_dict)
-# logger.info(f'Finished: ' + str(current_time))
+logger.info(f'Started: ' + str(current_time))
+email = clean_email(email)
+count_dict = count_words(email)
+update_csv(count_dict)
+logger.info(f'Finished: ' + str(current_time))
 
 
 # sheets()
@@ -169,7 +170,11 @@ current_time = current_time.replace(microsecond=0)
 # Create the Client
 # Enter the name of the downloaded KEYS
 # file in service_account_file
-client = pygsheets.authorize(service_account_file="C:/Users\Blisstopher\PycharmProjects\marks_weekly_note\marks_weekly_note\marksweeklynote-1d3d6bf29b7b")
+# client = pygsheets.authorize(service_account_file="C:/Users\Blisstopher\PycharmProjects\marks_weekly_note\marks_weekly_note\marksweeklynote-1d3d6bf29b7b")
+client = pygsheets.authorize(service_account_file=SERVICE_ACCOUNT_FILE)
+
+
+
 
 # Sample command to verify successful
 # authorization of pygsheets
