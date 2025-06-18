@@ -1,10 +1,12 @@
 # Key_list are words expected to be found often in email from Mark every week
 KEY_LIST = ['energizing', 'energized', 'synergy', 'aligned', 'lazer', 'lazer focused']
 
+
 # Header consists of metrics to track and display in dashboard
 HEADER = ('word,date,current_count,last_week_count,trending,month,month_name,quarter,year,'
           'January,February,March,April,May,June,July,August,'
           'September,October,November,December,ChatGPT')
+
 
 MONTH_DICT = {
     1: 'January',
@@ -20,6 +22,7 @@ MONTH_DICT = {
     11: 'November',
     12: 'December'
 }
+
 
 chat_GPT_magic_8_ball = {
     1: 'Highly likely',

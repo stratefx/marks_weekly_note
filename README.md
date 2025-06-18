@@ -17,6 +17,10 @@ into variable named 'email' at top of main.py
 3. Run
 4. Repeat steps 2 and 3 each week with new weekly email
 
+# Environment variables
+
+Name: CSV_PATH  value: full path to desktop
+
 # Constraints
 
 Security - The app shall not be granted access or entitlement
@@ -28,7 +32,3 @@ hardware space, so to keep these at a minimum, the program is
 to be run locally. Additionally, is will not connect to any
 database, rather, will use a simple csv file stored on the 
 local desktop to support CRUD operations.
-
-# Environment variables
-
-Name: CSV_PATH  value: full path to desktop

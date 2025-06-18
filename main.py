@@ -1,6 +1,5 @@
 import string
 import random
-
 import pandas as pd
 import os
 import datetime
@@ -12,8 +11,8 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(filename='Marks_note.log', level=logging.INFO)
 
 
-email = 'April 25, 2025 lkasjdfj energizing kl lkjsf alkd lazer'
-#email = " --EMAIL GOES HERE-- " # TODO: Paste email here, ensuring not to forget the date in the upper right
+
+email = " --EMAIL GOES HERE-- " # TODO: Paste email here, ensuring not to forget the date in the upper right
 
 
 
